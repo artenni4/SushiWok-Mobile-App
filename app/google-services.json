@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "556540261192",
+    "firebase_url": "https://sushiwokserver.firebaseio.com",
+    "project_id": "sushiwokserver",
+    "storage_bucket": "sushiwokserver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556540261192:android:f906e95bbcd3a7ee19797d",
+        "android_client_info": {
+          "package_name": "com.example.sushiwokmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556540261192-qi4o9k6vv9qrvrn865ite5kf32s91v47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIRfK_HHTa7muPif3UlvUyc8ktplNMQf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556540261192-qi4o9k6vv9qrvrn865ite5kf32s91v47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Курьеры Wok</string>
+    <string name="login_id">E-mail</string>
+    <string name="login_password">Пароль</string>
+    <string name="login">Войти</string>
+    <string name="login_explain">Введите свой e-mail и пароль.\nЕсли вы не знаете эти данные, спросите у\nвашего администратора</string>
+    <string name="all_courier_tasks">Доступные</string>
+    <string name="active_courier_tasks">Личные</string>
+    <string name="toolbar_title">Суши Wok | Курьеры</string>
+    <string name="settings_string">Настройки</string>
+    <string name="exit_string">Выйти</string>
+    <string name="info_take_from">Забрать из: </string>
+    <string name="info_deliver_to">Доставить: </string>
+    <string name="info_time">Вермя: </string>
+    <string name="info_phone_number">Телефон клиента: </string>
+    <string name="description">Описание заказа: </string>
+    <string name="cancel_order">Отменить доставку</string>
+    <string name="loading_screen_label">Суши Wok Курьеры</string>
+    <string name="loading_text">Подождите...</string>
+    <string name="toolbar_title_information">Информация о доставке</string>
+</resources>

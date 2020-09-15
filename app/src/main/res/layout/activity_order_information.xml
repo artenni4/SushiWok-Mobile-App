@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderInformationActivity"
+    android:background="@color/colorSoftWhite">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/default_toolbar"/>
+
+    <TextView
+        android:id="@+id/info_take_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="84dp"
+        android:text="Забрать из: "
+        android:textAlignment="textStart"
+        android:textColor="@color/colorInactivity"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/info_deliver_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:maxWidth="300dp"
+        android:text="Доставить:"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorInactivity"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/info_ready_take_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_take_from"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/info_ready_take_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="Вермя: "
+        android:textAlignment="textStart"
+        android:textColor="@color/colorInactivity"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/info_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_take_from"
+        app:layout_constraintVertical_bias="0.537" />
+
+    <TextView
+        android:id="@+id/info_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="Телефон клиента: "
+        android:textAlignment="textStart"
+        android:textColor="@color/colorInactivity"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/info_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_ready_take_time"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <TextView
+        android:id="@+id/info_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="300dp"
+        android:maxWidth="300dp"
+        android:text="Описание заказа: "
+        android:textAlignment="textStart"
+        android:textColor="@color/colorInactivity"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_call_to_client"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="28dp"
+        android:clickable="true"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_call_24"
+        tools:ignore="VectorDrawableCompat"
+        android:visibility="gone"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/btn_cancel_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/colorSoftWhite"
+        android:textSize="23sp"
+        android:layout_marginTop="108dp"
+        android:text="@string/cancel_order"
+        app:layout_constraintTop_toBottomOf="@+id/info_description"
+        tools:layout_editor_absoluteX="0dp"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
