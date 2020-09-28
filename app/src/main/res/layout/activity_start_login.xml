@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:layout_above="@id/btnLogin">
 
-        <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -19,57 +19,47 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="142dp"
-                android:layout_height="137dp"
-                android:layout_marginTop="36dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/logo" />
-
-            <EditText
-                android:id="@+id/etLoginID"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="240dp"
-                android:ems="10"
-                android:hint="@string/login_id"
-                android:inputType="textEmailAddress|textNoSuggestions"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <EditText
-                android:id="@+id/etPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:ems="10"
-                android:hint="@string/login_password"
-                android:inputType="textPassword|textNoSuggestions"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etLoginID" />
-
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
 
             <TextView
                 android:id="@+id/tvExplain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
                 android:text="@string/login_explain"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/imageView"
                 android:textAlignment="center"
                 android:textColor="@color/colorInactivity"
-                android:textSize="15sp"
-                app:layout_constraintBottom_toTopOf="@+id/etLoginID"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.495"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:textSize="15sp" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <EditText
+                android:id="@+id/etLoginID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvExplain"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="@string/login_id"
+                android:inputType="textEmailAddress|textNoSuggestions" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/etLoginID"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/login_password"
+                android:inputType="textPassword|textNoSuggestions"/>
+
+
+        </RelativeLayout>
 
     </ScrollView>
 
