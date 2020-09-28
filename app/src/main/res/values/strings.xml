@@ -5,7 +5,7 @@
     <string name="login">Войти</string>
     <string name="login_explain">Введите свой e-mail и пароль.\nЕсли вы не знаете эти данные, спросите у\nвашего администратора</string>
     <string name="all_courier_tasks">Доступные</string>
-    <string name="active_courier_tasks">Личные</string>
+    <string name="active_courier_tasks">Взятые</string>
     <string name="toolbar_title">Суши Wok | Курьеры</string>
     <string name="settings_string">Настройки</string>
     <string name="exit_string">Выйти</string>
