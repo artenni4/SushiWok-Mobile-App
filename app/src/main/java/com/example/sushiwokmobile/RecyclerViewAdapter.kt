@@ -1,5 +1,6 @@
 package com.example.sushiwokmobile
 
+import android.annotation.SuppressLint
 import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.View
@@ -14,9 +15,6 @@ class RecyclerViewAdapter(private val itemList: ArrayList<OrderDataHolder>) : Ad
 
     private var listener: OnItemClickListener? = null
     var buttonImageSrc: Drawable? = null
-        set(value) {
-            field = value
-        }
 
     interface OnItemClickListener {
         fun onItemClick(position: Int)
@@ -60,12 +58,18 @@ class RecyclerViewAdapter(private val itemList: ArrayList<OrderDataHolder>) : Ad
         return InnerViewHolder(view, listener)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: InnerViewHolder, position: Int) {
         val currentItem: OrderDataHolder = itemList[position]
         holder.tvReadyTime.text = currentItem.time
         holder.tvShopAddress.text = currentItem.senderName
-        holder.tvDestinationAddress.text = currentItem.destination
         holder.btnTakeOrder.setImageDrawable(buttonImageSrc)
+
+        val destination = currentItem.destination
+        if (destination.length >= 90) {
+            holder.tvDestinationAddress.text = destination.substring(0, 80) + "..."
+        }
+        holder.tvDestinationAddress.text = destination
     }
 
     override fun getItemCount(): Int {
